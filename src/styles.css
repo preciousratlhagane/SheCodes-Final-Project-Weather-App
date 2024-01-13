@@ -5,10 +5,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-family: "Space Mono", monospace;
 }
-
 main {
-  display: flex;
-  justify-content: space-between;
+  padding: 0px;
 }
 
 h1 {
@@ -71,22 +69,51 @@ a {
   cursor: pointer;
 }
 
+#weather-information {
+  display: flex;
+  justify-content: space-between;
+}
+
 #weather-temperature {
   display: flex;
   padding-top: 20px;
+  /*margin-top: 50px;*/
+}
+
+#weather-forecast-details {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0px;
 }
 
 #weather-icon {
-  margin-top: 35px;
+  margin-top: -86px;
   font-size: 45px;
 }
 
 #current-temperature {
   font-size: 100px;
   font-weight: 500;
+  margin-top: -115px;
 }
 
 #weather-unit {
-  margin-top: 30px;
+  margin-top: -86px;
   font-size: 30px;
+}
+
+.weather-forecast-icon {
+  display: block;
+  margin: 0 auto;
+  height: 20px;
+  width: 20px;
+}
+
+.weather-forecast-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.weather-forecast-day {
+  text-align: center;
 }
