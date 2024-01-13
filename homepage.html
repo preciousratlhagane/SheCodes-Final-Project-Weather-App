@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div id="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="text"
+            name="search-input-value"
+            id="search-input-value"
+            placeholder="Enter a city.."
+            required
+          />
+          <input type="submit" value="Search" id="search-button" />
+        </form>
+      </header>
+
+      <main>
+        <div id="weather-information">
+          <h1 id="current-city"></h1>
+          <p>
+            <span id="current-date"></span>,
+            <span id="weather-condition"></span>
+            <br />
+            Humidity:<strong id="humidity-condition"></strong>, Wind:<strong
+              id="wind-condition"
+            ></strong>
+          </p>
+        </div>
+        <div id="weather-temperature">
+          <span id="weather-icon"></span>
+          <span id="current-temperature"></span
+          ><span id="weather-unit">°C</span>
+        </div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/preciousratlhagane" target="_blank"
+          >Precious Ratlhagane</a
+        >,
+        <a
+          href="https://github.com/preciousratlhagane/SheCodes-Final-Project-Weather-App"
+          target="_blank"
+          >is open-sourced on Github</a
+        >
+        and <a href="#" target="_blank">hosted on Netlify</a>.
+      </footer>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
