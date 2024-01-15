@@ -65,8 +65,8 @@ function displayCurrentForecast(response) {
         <div class="weather-forecast-day">${formatDayOfTheWeek(day.time)}</div>
         <img src="${day.condition.icon_url}" class="weather-forecast-icon" />
         <div class="weather-forecast-temperatures">
-        <strong id="min-temp">${Math.round(day.temperature.minimum)}</strong>
-        <strong id="max-temp">${Math.round(day.temperature.maximum)}</strong>
+        <strong id="max-temp">${Math.round(day.temperature.maximum)}°</strong>
+        <strong id="min-temp">${Math.round(day.temperature.minimum)}°</strong>
         </div>
         </div>`;
     }
@@ -100,8 +100,6 @@ function currentDate(date) {
 
   return `${day} ${hours}:${minutes}`;
 }
-
-//let TodaysDate = currentDate(new Date());
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchQuery);
